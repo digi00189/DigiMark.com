@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+  --main-color:#8e44ad;
+  --black: #222;
+  --white: #fff;
+  --light-black: #777;
+  --light-white: #fff9;
+  --dark-bg: rgba(0,0,0,.7);
+  --light-bg: #eee;
+  --border:.1rem solid var(--black);
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-track {
+  border-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+  border-color: var(--main-color);
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.booking .book-form {
+  padding: 2rem;
+  background: rgb(206, 205, 205);
+} 
+
+.booking .book-form .flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.booking .book-form .flex .inputBox {
+  flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  color: #777;
+  text-transform: none;
+  margin-top: 1.5rem;
+  border: 2px solid black;
+}
+
+.booking .book-form .flex .inputBox input:focus {
+  background: rgb(202, 202, 240);
+  color: rgb(3, 3, 29);
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder {
+  background: rgb(202, 202, 240);
+  color: rgb(3, 3, 29);
+}
+
+.booking .book-form .flex .inputBox span {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.booking .book-form .btn {
+  margin-top: 2rem;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  width: 110px;
+}

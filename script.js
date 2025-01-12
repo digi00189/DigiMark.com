@@ -1,0 +1,26 @@
+// Script for navigation bar
+const bar = document.getElementById('bar')
+const close = document.getElementById('close')
+const nav = document.getElementById('navbar');
+
+if (bar) {
+  bar.addEventListener('click', () => {
+  nav.classList.add('active');
+  })
+}
+
+if (close) {
+  close.addEventListener('click', () => {
+  nav.classList.remove('active');
+  })
+}
+
+function myMenuFunction() {
+  var i = document.getElementById("navMenu");
+
+  if(i.className === "nav-menu") {
+      i.className += " responsive";
+  } else {
+      i.className = "nav-menu";
+  }
+ }
